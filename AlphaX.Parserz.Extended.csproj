@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>2.0.0</Version>
+    <PackageId>AlphaX.Parserz.Extended</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageTags>alpha;parse;parserz;.net;parser combinator;alphax;parsing;parser;alphax.parserz</PackageTags>
+    <PackageIcon>Icon.png</PackageIcon>
+    <Company>AlphaX</Company>
+    <Authors>AlphaX</Authors>
+    <Description>A collection of parsers built using 'AlphaX.Parserz' library. These parsers can easily fit into your development.
+
+Please provide your feedback or suggestions here - https://docs.google.com/forms/d/e/1FAIpQLSdftdgKK04BuNkfDj3UllGc-ALaHyKCRMbovdCFC7kRVTKKFw/viewform?usp=sf_link</Description>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <AssemblyVersion>2.0.0</AssemblyVersion>
+    <FileVersion>2.0.0</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;CS1591;</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;CS1591;</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AlphaX.Parserz.Extended.Tests\**" />
+    <EmbeddedResource Remove="AlphaX.Parserz.Extended.Tests\**" />
+    <None Remove="AlphaX.Parserz.Extended.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AlphaX.Parserz" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\ParserMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ParserMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\ParserMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ParserMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

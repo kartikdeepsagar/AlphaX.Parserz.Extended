@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlphaX.Parserz.Extended", "AlphaX.Parserz.Extended.csproj", "{65C4E55E-B8C3-41D1-B5BD-7FCECC6B36B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlphaX.Parserz.Extended.Tests", "AlphaX.Parserz.Extended.Tests\AlphaX.Parserz.Extended.Tests.csproj", "{F25E353E-54E9-4A60-8870-A2FB19C38D30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65C4E55E-B8C3-41D1-B5BD-7FCECC6B36B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C4E55E-B8C3-41D1-B5BD-7FCECC6B36B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C4E55E-B8C3-41D1-B5BD-7FCECC6B36B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C4E55E-B8C3-41D1-B5BD-7FCECC6B36B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F25E353E-54E9-4A60-8870-A2FB19C38D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25E353E-54E9-4A60-8870-A2FB19C38D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25E353E-54E9-4A60-8870-A2FB19C38D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25E353E-54E9-4A60-8870-A2FB19C38D30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83FED0F8-0105-4CC5-B05B-FCA2732EA596}
+	EndGlobalSection
+EndGlobal
